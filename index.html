@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center;">
+    <!-- crear un formulario que permita ingresar un valor en Euros y convertirlos a Pesos, donde también exista un botón con la opción que pueda ser limpiados los campos del formulario
+     1. opción 1: el usuario ingrese el valor en euros y se muestre su valor en pesos
+     2. opción 2: el usuario ingresa un valor y le damos la opción de convertir lo de euros a pesos o pesos a euros-->
+    <div id="contenedor" style="display: inline-block; border: 1px solid black; text-align: center; width: 1000px; height: 300px; background-color: cyan;">
+     <h1> CONVIERTE DE EUROS A PESOS COLOMBIANOS O VICEVERSA </h1>
+     <form action="">
+
+        <label for="">Valor a convertir: </label><br><br>
+        <input type="number" name="" id="cantidad"> <br><br>
+        
+        <select name="" id="operacion" onchange="convertir()">
+            <option value="ep">Euros a Pesos</option>
+            <option value="pe">Pesos a Euros</option>
+        </select> <br><br>
+        
+        <div id="botones" style="display: inline-block;">
+            <button type="reset"> limpiar </button>
+            <button type="button" onclick="convertir()"> Convertir </button>
+        </div>
+
+     </form>
+
+     <p id="resultado">
+
+     </p>
+
+    </div>
+
+
+    <script src="./convertir.js"></script>
+</body>
+</html>
